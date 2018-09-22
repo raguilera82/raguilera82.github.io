@@ -1,14 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Rubén Aguilera (raguilera82)</title>
-</head>
-<body>
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<div id="headContent"></div>
 
-    <h1>Under construction</h1>
-    
+<body class="is-preload">
+
+	<!-- Header -->
+	<div id="header">
+
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logoContent"></div>
+
+			<!-- Nav -->
+			<div id="navContent"></div>
+
+		</div>
+
+		<div class="bottom">
+
+			<!-- Social Icons -->
+			<div id="socialIconsContent"></div>
+
+		</div>
+
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footerContent"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		$(function () {
+			$("#navContent").load("nav.html");
+			$("#headContent").load("head.html");
+			$("#logoContent").load("logo.html");
+			$("#footerContent").load("footer.html");
+			$("#socialIconsContent").load("socialIcons.html");
+			$("#main").load("intro.html");
+		});
+
+		function changeMain(page) {
+			$("#main").load(page);
+		}
+	</script>
+
 </body>
+
 </html>
